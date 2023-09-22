@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Dancing+Script&family=Edu+SA+Beginner:wght@400;700&family=Istok+Web&family=Overpass:wght@400;700&family=Tangerine&display=swap');
+
+:root{
+    --pirmery-color:  hsl(25, 97%, 53%);
+
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    list-style: none;
+
+}
+body{
+    background-color: black;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.container{
+    margin-top: 20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+width: 400px;
+height: 400px;
+background-color: rgb(30 38 49);
+border-radius: 25px;
+padding: 25px;
+line-height: 2;
+
+
+}
+.card .frotsvg svg{
+    background-color:rgb(48, 62, 75) ;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 15px;
+}
+.card h1{
+font-weight: 700;
+line-height: .5;
+}
+.card p{
+    line-height: 1;
+    opacity: .5;
+}
+.card .rating{
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.rating p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color:rgb(48, 62, 75) ;
+    transition:background-color .1;
+
+}
+.rating p:hover{
+    background-color:rgb(122 136 153) ;
+    opacity: 1;
+    
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--pirmery-color);
+    color: white;
+    
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+.back{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.back .score{
+    opacity: 1;
+    padding: 10px;
+    border-radius: 25px;    background-color:rgb(42, 57, 69) ;
+    color: var(--pirmery-color);
+}
+@media (max-width: 390px) {
+    body{
+        background-color: rgb(30 38 49);
+        
+    }
+    .front,
+    .back{
+        margin-top: 50%;
+    }
+    button{
+    margin-top: 25%;
+    }
+    .rating {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+      }
+      
+      .rating .star {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgb(48, 62, 75);
+        display: flex;
+        justify-content: center;  
+        align-items: center; 
+        margin: 5px; /* Add some spacing between the circular elements */
+      }
+      
+}
